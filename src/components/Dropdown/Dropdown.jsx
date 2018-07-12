@@ -13,13 +13,13 @@ const Dropdown = ({ onClick, currencies }) => (
     >
       Select Currency
     </button>
-    <div className="dropdown-menu">
-      {currencies.map(({ code }, i) => (
-        <button className="dropdown-item" onClick={() => onClick(code)} key={i}>
-          {code}
-        </button>
+      <div className="dropdown-menu">
+        {currencies.map(({ code }, i) => (
+          <button className="dropdown-item" onClick={() => onClick(code)} key={i}>
+            {code}
+          </button>
       ))}
-    </div>
+      </div>
   </div>
 );
 

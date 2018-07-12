@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import List from '../List/List';
 import Dropdown from '../Dropdown/Dropdown';
 import Form from '../Form/Form';

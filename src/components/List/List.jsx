@@ -1,6 +1,6 @@
-import React from "react";
-import ListElement from "./ListElement";
+import React from 'react';
 import PropTypes from 'prop-types';
+import ListElement from './ListElement';
 
 const List = ({ bpi, onClick, input }) => {
   const filteredBpi = bpi.filter(val => val.show);
@@ -21,7 +21,7 @@ const List = ({ bpi, onClick, input }) => {
 };
 
 List.propTypes = {
-  bpi: PropTypes.array.isRequired,
+  bpi: PropTypes.arrayOf(PropTypes.object).isRequired,
   onClick: PropTypes.func.isRequired,
   input: PropTypes.string,
 };

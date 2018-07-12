@@ -7,7 +7,7 @@ const Form = ({ handleChange }) => (
       <label className="form-check-label" htmlFor="btcInput">
         Insert BTC value
       </label>
-      <input type="number" className="form-control" id="btcInput" onChange={handleChange} />
+        <input type="number" className="form-control" id="btcInput" onChange={handleChange} />
     </div>
   </form>
 );

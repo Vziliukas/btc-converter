@@ -7,9 +7,9 @@ const ListElement = ({
 }) => (
   <li className="list-group-item">
     {code} {value && currencyFormatter.format(value * rate, { code })}
-    <button type="button" className="close" aria-label="Close" onClick={onClick}>
-      <span aria-hidden="true">&times;</span>
-    </button>
+      <button type="button" className="close" aria-label="Close" onClick={onClick}>
+        <span aria-hidden="true">&times;</span>
+      </button>
   </li>
 );
 
